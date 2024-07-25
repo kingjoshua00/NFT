@@ -1,0 +1,162 @@
+
+@font-face {
+    font-family: Appetite Pro medium;
+    src: url(./Font/AppetitePro-Medium-BF64cc5fc311b19.woff);
+}
+
+@font-face {
+    font-family: Appetite Pro;
+    src: url(./Font/AppetitePro-Regular-BF64cc5fc2daf21.woff);
+}
+
+@font-face {
+    font-family: Appetite Light;
+    src: url(./Font/AppetitePro-Light-BF64cc5fc3015be.woff);
+}
+
+@keyframes bear{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(20px);}
+    100%{transform: translateY(0px);}
+}
+
+@keyframes text1 {
+    0%{transform: translateX(-500px);}
+}
+
+@keyframes data {
+    0%{transform: translateY(100px);}
+}
+
+
+
+body{
+    margin: 0;
+    overflow-y: hidden;
+}
+
+header{
+    background-color: black;
+    font-family: Appetite Pro;
+    height: 100vh;
+    padding: 25px 60px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.section2 a:hover{
+    color: purple;
+    border-bottom: 3px solid purple;
+    transform: scale(1.1) ;
+}
+
+.section2, .section3{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.section3 a{
+    border: 2px solid purple;
+    padding: 5px 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.section3 a:hover{
+    background-color: purple;
+    color: black;
+}
+
+section{
+    padding-top: 80px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.bear{
+    position: absolute;
+    right: 0;
+    height: 600px;
+    width: 550px;
+    animation-name: bear;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.text .text1{
+    font-size: 63px;
+    font-family: Appetite Pro medium;
+    font-weight: 500;
+    animation-name: text1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.text .text2{
+    font-family: Appetite Light;
+    font-size: 20px;
+    animation-name: text1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.demo{
+    display: flex;
+    align-items: center;
+}
+
+.demo span:hover{
+    color: purple;
+}
+
+.demo input{
+    background-color: black;
+    color: white;
+    font-family: Appetite Pro ;
+    padding: 10px 25px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.demo input:hover{
+background-color: purple;
+color: black;
+}
+
+.demo img{
+    height: 50px;
+    width: auto;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+    text-align: center;
+    color: white;
+    font-family: Appetite Pro;
+    animation-name: data;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
